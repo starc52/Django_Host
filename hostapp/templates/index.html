@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+    <title>List all Images</title>
+</head>
+<body>
+    <center>
+        <h1>Experiment Results</h1> 
+        
+        {% for results in audImag %}
+        <audio src={{results.songfile.url}} controls='controls'></audio>       
+        <img src = {{results.image.url}} height="150", alt="{{results.imgtitle}}" title="{{results.imgtitle}}">
+        </br>
+        {% endfor %}
+    </center>
+</body>
+</html>
