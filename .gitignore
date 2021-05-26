@@ -1,0 +1,2 @@
+hostapp/media/*
+hostapp/db.sqlite3
